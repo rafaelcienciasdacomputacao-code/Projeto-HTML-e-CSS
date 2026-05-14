@@ -183,7 +183,22 @@ nav a:hover {
     color: #000;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .price-card {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 
 /* Esconde os radios */
 input[type="radio"] {
