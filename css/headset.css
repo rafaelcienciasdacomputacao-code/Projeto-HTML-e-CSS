@@ -1,0 +1,191 @@
+/* Estilos Gerais */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+/* Menu de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #FFD700;
+}
+
+.logo {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+
+
+/* Layout do Produto */
+.product-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Galeria de Imagens */
+.main-image {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#radio1:checked ~ .main-image #img1 {
+    display: block;
+}
+#radio2:checked ~ .main-image #img2 {
+    display: block;
+}
+
+.main-image img:hover {
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    left: 15px;
+    background-color: #FFD700;
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumb {
+    width: 70px;
+    height: 70px;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumb:hover {
+    border-color: #FFD700;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card de Preço */
+.price-card {
+    background-color: #111111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.current-price {
+    display: block;
+    color: #FFD700;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Botões */
+.btn-add, .btn-buy {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-add {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px;
+}
+
+.btn-add:hover {
+    background-color: #e6c200;
+}
+
+.btn-buy {
+    background-color: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.btn-buy:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+
+
+/* Esconde os radios */
+input[type="radio"] {
+    display: none;
+}
