@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 body {
   background-color: #000;
   color: #fff;
@@ -11,10 +17,11 @@ body {
   padding: 20px 5%;
   background-color: #0a0a0a;
   border-bottom: 2px solid #FFD700;
+  
 }
 
 .logo {
-  color: #FFD700;
+  color: #ffff00;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -22,7 +29,7 @@ body {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 50px;
 }
 
 nav a {
@@ -30,6 +37,7 @@ nav a {
   color: #fff;
   transition: color 0.3s ease;
    text-transform: uppercase;
+   font-size: 14px; /* Ajustado de 1 para 14px */
 }
 
 nav a:hover {

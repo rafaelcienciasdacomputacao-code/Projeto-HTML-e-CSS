@@ -16,6 +16,7 @@ body {
     justify-content: space-between;
     padding: 20px 5%;
     border-bottom: 2px solid #ffd700;
+    align-items: center;
 }
 
 .logo {
@@ -27,9 +28,10 @@ body {
 .menu a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 14px; /* Ajustado de 1 para 14px */
     text-transform: uppercase;
+    
 }
 
 .header a:hover {
